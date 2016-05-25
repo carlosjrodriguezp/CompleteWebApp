@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/CompleteWebApp">
+            <Resource
+    type="javax.sql.DataSource"
+    auth="Container"
+    name="jdbc/registro"
+    driverClassName="org.apache.derby.jdbc.ClientDriver"
+    url="jdbc:derby://localhost:1527/testingWebApp"
+    username="testUser"
+    password="12345"
+ 
+    maxActive="100"
+    maxIdle="30"
+    maxWait="10000"
+    validationQuery="SELECT 1 FROM dual"
+ />
+</Context>

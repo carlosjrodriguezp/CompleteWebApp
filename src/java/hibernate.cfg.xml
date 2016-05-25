@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.driver_class">org.apache.derby.jdbc.ClientDriver</property>
+    <property name="connection.url">jdbc:derby://localhost:1527/testingWebApp</property>
+    <property name="connection.username">testUser</property>
+    <property name="connection.password">12345</property>
+    <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+    <property name="hibernate.show_sql">true</property>
+    
+    <mapping class="com.webapp.dominio.Registro"/>
+    
+  </session-factory>
+</hibernate-configuration>
