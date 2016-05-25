@@ -21,7 +21,7 @@ public class RegistroController {
         String viewName;
         
         try{
-            Registro registro = registroDAO.get(1);
+            Registro registro = registroDAO.get(2);
             model.put("texto", registro);
             viewName = "registro";
         }catch(Exception ex){
